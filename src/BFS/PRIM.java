@@ -18,5 +18,11 @@ public class PRIM {
             g.vertices[i].chave = Constantes.INFINITO;
             g.vertices[i].pai = null;
         }
+        
+        int id = s.getIndice();
+        int p = Constantes.INFINITO;
+        g.vertices[id].chave = 0;
+        FilaDePrioridade f = new FilaDePrioridade(g.vertices);
+
     }
 }
